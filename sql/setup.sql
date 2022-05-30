@@ -1,7 +1,7 @@
 drop table if exists restaurant_menu;
 drop table if exists reservation;
-drop table if exists client;
 drop table if exists restaurant;
+drop table if exists client;
 drop table if exists city;
 drop table if exists menu;
 
@@ -47,13 +47,6 @@ create table reservation(
     foreign key (menu_id) references menu (menu_id),
     foreign key (restaurant_id) references restaurant (restaurant_id)
  );
- 
-
-
-select*
-from city;
-
-
 
 insert into restaurant(name,city_id) 
  values ("S&E Piazza di Spagna","RM");
