@@ -30,7 +30,7 @@ public class SignIn extends HttpServlet {
 		} else {
 			url = "welcome.jsp";
 		}
-
+		request.setAttribute("username", username);
 		request.getRequestDispatcher(url).forward(request, response);
 	}
 
