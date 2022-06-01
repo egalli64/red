@@ -21,17 +21,16 @@ public class SignIn extends HttpServlet {
 		String username = request.getParameter("username");
 		String email = request.getParameter("email");
 		String telefono = request.getParameter("telefono");
-
 		String password = request.getParameter("password");
 
 		String url;
-		if (nome == null
-				|| cognome == null || username == null || email==null && telefono ==null|| password == null || password.isBlank()) {
+		if (nome == null || cognome == null || username == null || email == null && telefono == null || password == null
+				|| password.isBlank()) {
 			url = "/signin.html";
 		} else {
 			url = "welcome.jsp";
 		}
-		
+
 		request.getRequestDispatcher(url).forward(request, response);
 	}
 
