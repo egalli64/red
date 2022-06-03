@@ -4,13 +4,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<!-- inserire CSS -->
-<title>Sit&Eat welcome</title>
+<link rel="stylesheet" href="/red/css/welcome.css">
+<title>Sit&amp;Eat welcome</title>
 </head>
 <body>
-	<h3>Benvenut@ in Sit & Eat, ${username}!</h3>
-	<p>PRENOTA ORA
-	<p>
+	<h3>Benvenut@ in Sit &amp; Eat, ${username}!</h3>
+	<div>
+	<figure>
+		<img src="/red/immagine/SIT.jpg" alt="SIT" width="30%">
+		</figure></div>
+	<p>PRENOTA ORA	<p>
 		<br>
 		     <form action="/test" id="form">
 		<div> 
@@ -66,15 +69,7 @@
             </div>
 			<a href="tremenu.html"> Rivedi i nostri menù! </a>
 			</div>
-			<button id="button">Prenota!</button>
-			
-			
-			
-			
-			
-			
-			
-
-			
+			<br>
+			<button id="btn">Prenota!</button>
 </body>
 </html>

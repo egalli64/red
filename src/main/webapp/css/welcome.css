@@ -1,0 +1,23 @@
+#btn  {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    margin-top: 0;
+    height: 30px;
+    border: none;
+    background-size: 200% 100%;
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, rgb(220, 226, 34), rgb(255, 174, 0), rgb(200, 127, 8));
+    box-shadow: 0 4px 15px 0 rgba(220, 142, 7, 0.75);
+}
+
+#btn:hover {
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+}
