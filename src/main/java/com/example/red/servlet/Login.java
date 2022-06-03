@@ -27,7 +27,6 @@ public class Login extends HttpServlet {
 			url = "/login.html";
 		} else {
 			session.setAttribute("username", null);
-			request.setAttribute("wrong", username);
 			url = "welcome.jsp";
 		}
 		request.setAttribute("username", username);

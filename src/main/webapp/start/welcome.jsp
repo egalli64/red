@@ -48,8 +48,8 @@
                     <label for="orario" class="form"> <b> Scegli un orario:</b></label>
                     <select class="form">
                         <option value="">--Fascia oraria--</option>
-                        <option value="9-12">9-12</option>
-                        <option value="12-16">12-16</option>
+                        <option value="11-13">11-13</option>
+                        <option value="13-16">13-16</option>
                         <option value="16-18">16-18</option>
                         <option value="18-22">18-22</option>
                     </select>
