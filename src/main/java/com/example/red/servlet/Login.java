@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 @WebServlet("/start/login")
 public class Login extends HttpServlet {
@@ -19,9 +20,14 @@ public class Login extends HttpServlet {
 		String password = request.getParameter("password");
 
 		String url;
+		
+		HttpSession session = request.getSession();
 		if (username == null || username.isBlank() || password == null || password.isBlank()) {
+			session.setAttribute("username", username);
 			url = "/login.html";
 		} else {
+			session.setAttribute("username", null);
+			request.setAttribute("wrong", username);
 			url = "welcome.jsp";
 		}
 		request.setAttribute("username", username);

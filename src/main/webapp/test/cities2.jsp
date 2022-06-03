@@ -8,7 +8,7 @@
 <link rel="icon" href="data:;base64,=">
 </head>
 <body>
-    <h1>cities by JSTL (don't do this in production!)</h1>
+    <h1>cities by JSTL</h1>
     <table>
         <tr>
             <th>id</th>
