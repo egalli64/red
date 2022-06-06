@@ -6,6 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * Servlet implementation class SignIn
@@ -28,6 +29,8 @@ public class SignIn extends HttpServlet {
 				|| password.isBlank()) {
 			url = "/signin.html";
 		} else {
+			HttpSession session = request.getSession();
+			session.setAttribute("username", username);
 			url = "welcome.jsp";
 		}
 		request.setAttribute("username", username);

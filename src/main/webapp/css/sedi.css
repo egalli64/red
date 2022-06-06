@@ -1,0 +1,23 @@
+body {
+	background-color:rgba(255, 166, 0, 0.563);
+	line-height: 1rem;
+	font-size: 14px;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#titolo {
+	font-weight: 300;
+    margin-top: 40px;
+    margin-left: 20px;
+    color: rgba(198, 49, 49, 0.929);
+    font-size: 50px;
+    font-family: Garamond, serif;
+}
+
+
+
+
+
+

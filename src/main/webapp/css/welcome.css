@@ -1,3 +1,23 @@
+body {
+    background-color: #f1f7fc;
+    padding:80px 0;
+  }
+	
+#benvenuto {
+ 
+    font-weight: 300;
+      margin-top: 40px;
+      margin-left: 20px;
+      color: rgba(198, 49, 49, 0.929);
+      font-size: 50px;
+      font-family: Garamond, serif;
+  }
+
+  #prenotaora{
+    font-size: 20px;
+    color: rgb(240, 153, 53);
+  }
+
 #btn  {
     padding: 10px;
     padding-left: 20px;
@@ -20,4 +40,17 @@
 #btn:hover {
     background-position: 100% 0;
     transition: all .4s ease-in-out;
+}
+
+#hormenu {
+width: 20%;
+margin: 50;
+padding: 50;
+border-top: 1px solid black;
+display:block;
+    text-align:center;
+    font-size:12px;
+    color:#414548;
+    opacity:0.9;
+    text-decoration:none;
 }

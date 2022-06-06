@@ -1,37 +1,39 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="/red/css/welcome.css">
+<link rel="stylesheet" href="../css/welcome.css">
 <title>Sit&amp;Eat welcome</title>
 </head>
 <body>
 
-	<h3>Benvenut@ in Sit &amp; Eat, ${username}!</h3>
+	<h3 id="benvenuto">Benvenuto/a in Sit &amp; Eat, ${username}!</h3>
 	<div>
 	<figure>
-		<img src="/red/immagine/SIT.jpg" alt="SIT" width="30%">
+		<img src="/immagine/SIT.jpg" alt="SIT" width="30%">
 		</figure></div>
-	<p>PRENOTA ORA	<p>
+	<p id="prenotaora">PRENOTA ORA	<p>
 		<br>
-		     <form action="/test" id="form">
+		<form action="/test" id="form">
 		<div> 
 		<label for="città" class="form"> <b> Scegli la città: </b> 
-		</label>
-		<select class="form">
-			<option value="">--Città--</option>
-			<option value="Milano">Milano</option>
-			<option value="Roma">Roma</option>
-			<option value="Torino">Torino</option>
-			</select>
+		
+			<select class="form-control form-control-lg" id="hormenu">
+				<option>--Città--</option>
+				<option value="Milano">Milano</option>
+				<option value="Roma">Roma</option>
+				<option value="Torino">Torino</option>
+			  </select>
 			</div>
+			
+
 			<div> 
 			<label for="ristorante" class="form"> <b> Scegli il ristorante: </b> 
 		</label>
-		<select class="form">
-			<option value="">--Ristorante--</option>
+		
+		<select class="form-control form-control-lg" id="hormenu">
+		<option>--Ristorante--</option>
 			<option value="Milano">MILANO - Piazza Duomo </option>
 			<option value="Milano">MILANO - Porta Venezia </option>
 			<option value="Milano">MILANO - Corso Como </option>
@@ -43,11 +45,12 @@
 					<option value="Torino">TORINO - Lingotto</option>
 			</select>
 			</div>
+			<a href="/red/TreMenu.html"> Dove siamo </a>
 			<div>
                     <label class="form"> <b> Scegli il giorno:</b> <input type="date" name="milestone"></label>
 
-                    <label for="orario" class="form"> <b> Scegli un orario:</b></label>
-                    <select class="form">
+                    <label form="orario" class="form"> <b> Scegli un orario:</b></label>
+					<select class="form-control form-control-lg" id="hormenu" >
                         <option value="">--Fascia oraria--</option>
                         <option value="11-13">11-13</option>
                         <option value="13-16">13-16</option>
@@ -63,12 +66,13 @@
                 
             <div>
                 <label class="form"> <b> Scegli il tuo menu:</b> </label>
-                    <label><input type="radio" name="menu" value="italiana" checked>Menù all'italiana</label>
+			     <label><input type="radio" name="menu" value="italiana" checked>Menù all'italiana</label>
                     <label><input type="radio" name="menu" value="vegano">Menù vegano</label>
 <label><input type="radio" name="menu" value="vegetariano">Menù vegetariano</label>
 
             </div>
 			<a href="/red/TreMenu.html"> Rivedi i nostri menù! </a>
+		
 			</div>
 			<br>
 			<button id="btn">Prenota!</button>
