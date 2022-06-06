@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="../css/welcome.css">
+<link rel="stylesheet" href="/red/css/prenota.css">
 <title>Sit&amp;Eat welcome</title>
 </head>
 <body>
@@ -18,12 +18,12 @@
 		</figure></div>
 	<p id="prenotaora"> COMPILA IL FORM	<p>
 		<br>
-		<form action="/test" id="form">
+		<form action="/red/reservation/new" id="form">
 		<div> 
-		<label for="città" class="form"> <b> Scegli la città: </b> 
+		<label for="città" class="form"> <b> Scegli la città: </b> </label>
 			
 
-			<select class="form-control form-control-lg" placeholder="Città" required>
+			<select class="form-control form-control-lg" placeholder="Città" name= "citta" required>
 				<option> Città </option>
 				<option value="Milano">Milano</option>
 				<option value="Roma">Roma</option>
@@ -37,7 +37,7 @@
 			<label for="ristorante" class="form"> <b> Scegli il ristorante: </b> 
 		</label>
 		
-		<select class="form-control form-control-lg" placeholder=" Ristorante" required>
+		<select class="form-control form-control-lg" placeholder=" Ristorante" name= "ristorante" required>
 		<option> Ristorante </option>
 			<option value="Milano">MILANO - Piazza Duomo </option>
 			<option value="Milano">MILANO - Porta Venezia </option>
@@ -53,10 +53,10 @@
 				</div>
 	
 			<div>
-                    <label class="form"> <b> Scegli il giorno:</b> <input type="date" name="day" required></label>
+                    <label class="form"> <b> Scegli il giorno:</b> <input type="date" name="giorno" required></label>
 
                     <label form="orario" class="form"> <b> Scegli un orario:</b></label>
-					<select class="form-control form-control-lg"  >
+					<select class="form-control form-control-lg" name= "ora" >
                         <option value=""> Orario </option>
                         <option value="11-13">11-13</option>
                         <option value="13-16">13-16</option>
