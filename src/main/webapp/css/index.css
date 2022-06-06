@@ -23,7 +23,7 @@ a:link {
 	color: black;
 }
 
-.menu {
+.menu, .linkbar{
 	font-size: 17px;
 	text-decoration: none;
 	list-style: none;
