@@ -1,5 +1,5 @@
 body {
-    background-color: #f1f7fc;
+  background-color:rgba(255, 166, 0, 0.563);
     padding:80px 0;
   }
 	
@@ -16,6 +16,7 @@ body {
   #prenotaora{
     font-size: 20px;
     color: rgb(240, 153, 53);
+    margin: 30px;
   }
 
 #btn  {
@@ -42,15 +43,33 @@ body {
     transition: all .4s ease-in-out;
 }
 
-#hormenu {
-width: 20%;
-margin: 50;
-padding: 50;
-border-top: 1px solid black;
-display:block;
-    text-align:center;
-    font-size:12px;
-    color:#414548;
-    opacity:0.9;
-    text-decoration:none;
+
+.container{
+  background-color: #eee;
+		border-radius: 30px;
+		margin-left: 20%;
+		margin-right: 20%;
+}
+
+.form{
+  margin: 30px;
+}
+
+.form-control{
+  background:#ffffff;
+    border:none;
+    border-bottom:1px solid #eee;
+    border-radius:0;
+    box-shadow:none;
+    outline:none;
+    color:inherit;
+    text-indent:8px;
+    height:42px;
+    font-family: Garamond, serif;
+    font-size: 15px;
+    
+  }
+
+.rivedi{
+ margin-inline-start:  60px;
 }

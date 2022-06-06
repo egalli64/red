@@ -8,6 +8,7 @@ body {
 }
 
 #titolo {
+	padding: 50px;
 	font-weight: 300;
     margin-top: 40px;
     margin-left: 20px;
@@ -16,8 +17,71 @@ body {
     font-family: Garamond, serif;
 }
 
+.container{
+		background-color: #eee;
+		border-radius: 30px;
+		margin-left: 20%;
+		margin-right: 20%;
+		}
 
 
+#Milano{
+display:flex;
+justify-content: space-around;
+margin-left: auto;
+margin-right: auto;
+}
 
 
+#Roma{
+	display:flex;
+justify-content: space-around;
+margin-left: auto;
+margin-right: auto;
+}
 
+#Torino{
+	display:flex;
+justify-content: space-around;
+margin-left: auto;
+margin-right: auto;
+}
+
+.città{
+	font-family: Garamond, serif;
+	font-size: large;
+	margin-top: 50px;
+	display:flex;
+	justify-content: center;
+	color: rgba(198, 49, 49, 0.929);
+}
+
+#MI {
+margin-top: -20px;
+
+}
+.frame{
+	font-family: Garamond, serif;
+	font-size: large;
+	font-weight: bold;
+}
+
+#btn{
+	padding: 20px 25px;
+	border: none;
+	border-radius: 50px;
+	background-color: orange;
+	text-decoration: none;
+	cursor: pointer;
+	margin: 30px;
+
+}
+
+#btn:hover{
+	padding: 20px 25px;
+	border: none;
+	border-radius: 50px;
+	background-color: rgba(255, 174, 0, 0.878);
+	text-decoration: none;
+	cursor: pointer;
+}

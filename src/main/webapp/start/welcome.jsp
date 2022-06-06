@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <!DOCTYPE html>
 <html>
@@ -8,32 +10,35 @@
 </head>
 <body>
 
+	<div class="container">
 	<h3 id="benvenuto">Benvenuto/a in Sit &amp; Eat, ${username}!</h3>
 	<div>
 	<figure>
-		<img src="/immagine/SIT.jpg" alt="SIT" width="30%">
+		<img src="/red/immagine/SIT.jpg" alt="SIT" width="30%">
 		</figure></div>
-	<p id="prenotaora">PRENOTA ORA	<p>
+	<p id="prenotaora"> COMPILA IL FORM	<p>
 		<br>
 		<form action="/test" id="form">
 		<div> 
 		<label for="città" class="form"> <b> Scegli la città: </b> 
-		
-			<select class="form-control form-control-lg" id="hormenu">
-				<option>--Città--</option>
+			
+
+			<select class="form-control form-control-lg" placeholder="Città" required>
+				<option> Città </option>
 				<option value="Milano">Milano</option>
 				<option value="Roma">Roma</option>
 				<option value="Torino">Torino</option>
-			  </select>
-			</div>
 			
+			</select>
+			</div>
+		
 
 			<div> 
 			<label for="ristorante" class="form"> <b> Scegli il ristorante: </b> 
 		</label>
 		
-		<select class="form-control form-control-lg" id="hormenu">
-		<option>--Ristorante--</option>
+		<select class="form-control form-control-lg" placeholder=" Ristorante" required>
+		<option> Ristorante </option>
 			<option value="Milano">MILANO - Piazza Duomo </option>
 			<option value="Milano">MILANO - Porta Venezia </option>
 			<option value="Milano">MILANO - Corso Como </option>
@@ -41,42 +46,48 @@
 			<option value="Roma">ROMA - Piazza del Popolo </option>
 			<option value="Roma">ROMA - Via del Corso</option>
 			<option value="Torino">TORINO - Piazza Castello</option>
-				<option value="Torino">TORINO - Via Nizza</option>
-					<option value="Torino">TORINO - Lingotto</option>
+			<option value="Torino">TORINO - Via Nizza</option>
+			<option value="Torino">TORINO - Lingotto</option>
 			</select>
-			</div>
-			<a href="/red/TreMenu.html"> Dove siamo </a>
+			<span> <a href="/red/sedi.html" class="rivedi"> Dove siamo </a> </span>
+				</div>
+	
 			<div>
-                    <label class="form"> <b> Scegli il giorno:</b> <input type="date" name="milestone"></label>
+                    <label class="form"> <b> Scegli il giorno:</b> <input type="date" name="day" required></label>
 
                     <label form="orario" class="form"> <b> Scegli un orario:</b></label>
-					<select class="form-control form-control-lg" id="hormenu" >
-                        <option value="">--Fascia oraria--</option>
+					<select class="form-control form-control-lg"  >
+                        <option value=""> Orario </option>
                         <option value="11-13">11-13</option>
                         <option value="13-16">13-16</option>
                         <option value="16-18">16-18</option>
                         <option value="18-22">18-22</option>
                     </select>
                 </div>
+
                 <div>
-                <label> <b> Numero coperti:</b></label><input name="coperti" class="form" required>
+					<label for="coperti" class="form"> <b> Numero coperti:</b> </label> 
+					<input id ="coperti" type="number" name="coperti" value="0" class="form-control" required>
                 </div>
                 
-			 <div class="div">
                 
             <div>
-                <label class="form"> <b> Scegli il tuo menu:</b> </label>
+                <label class="form"> <b> Scegli il tuo menù:</b> </label>
 			     <label><input type="radio" name="menu" value="italiana" checked>Menù all'italiana</label>
                     <label><input type="radio" name="menu" value="vegano">Menù vegano</label>
-<label><input type="radio" name="menu" value="vegetariano">Menù vegetariano</label>
-
+					<label><input type="radio" name="menu" value="vegetariano">Menù vegetariano</label>
+						<a href="/red/TreMenu.html" class="rivedi"> Rivedi i nostri menù! </a>
             </div>
-			<a href="/red/TreMenu.html"> Rivedi i nostri menù! </a>
+			
 		
-			</div>
+	
 			<br>
 			<button id="btn">Prenota!</button>
-			<a href="/red/start/logout"> logout! </a>
-			
+			<a href="/red/start/logout"> logout </a>
+
+
+		</div> <!--chiusura container grande-->
+
+	
 </body>
 </html>
