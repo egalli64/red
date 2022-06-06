@@ -5,37 +5,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel ="stylesheet" href="css/index.css">
+ <link rel ="stylesheet" href="css/index.css">
   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
   <div class="container">
-    <nav class="row">
     
-        <div class = "col-6"> <p id="titolo"> SIT &amp; EAT</p> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-            <div class="collapse navbar-collapse" id="nav">
-                <ul class="navbar-nav me-auto">
-                  <li class="nav-item"> <a class="nav-link active" href="#">Home</a> </li>
-                    <li class="nav-item"> <a class="nav-link active" href="#">Le nostre sedi</a> </li>
-                
-                    <li class="nav-item"> <a class="nav-link" href="TreMenu.html">I nostri menù</a> </li>
-
-                </ul>
-                <ul class="d-flex mb-0">
-                    
-                    <li class="nav-item me-3">
-                        <div class="btn btn-outline-primary"> <a href="signin.html">Registrati</a></div>
-                    </li>
-                    <li class="nav-item">
-                        <div class="btn btn-primary"> <a href="login.html"> Accedi</a></div>
-                    </li>
-                </ul>
-            </div>
+        <div> 
+        	<p id="titolo"> SIT &amp; EAT</p>
+           <div  id="barranav">
+              <div>
+      <nav>      
+            <ul class="menu">
+                  <li class="nav-item"> <a href="#" class="linkbar">Home</a></li>
+                  <li class="nav-item"> <a href="#" class="linkbar">Le nostre sedi</a></li>
+                  <li class="nav-item"> <a href="/red/TreMenu.html" class="linkbar">I nostri menù</a></li>
+               </ul>
+      </nav>
+   </div>
+   <div class="destra">
+      <a href="signin.html" class="linkbar" id="reg">Registrati</a>
+         <button  id="accedi"><a href="/red/login.html" class="linkbar"> Accedi</a></button>
+            
+      </div>
         </div>
-    </nav>
-<div class="container">
+      </div>
+   </div>
+<div class="container" id="mezzo">
   <h2 id="tcarosello">Dove siamo</h2>  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -82,13 +80,14 @@
     </a>
   </div>
 </div>
-
+</div>
 <section class="section-big main-color">
-   <div class="container">
+   <div class="container" id="sotto">
+      <div id="contenutosotto">
 
       <div class="row">
          <div class="col-md-12 pb-20 text-center"> 
-            <h2 class="section-title mb-10"><span> <strong class="primary-color"> Prenota in poche semplici mosse</strong> </span></h2>
+            <h2 class="section-title mb-10" id="titolino"><span> <strong class="primary-color"> Prenota in poche semplici mosse</strong> </span></h2>
            
             <div class="exp-separator center-separator">
                <div class="exp-separator-inner">
@@ -97,39 +96,45 @@
 
          </div>
       </div>
-
-      <div class="row">
-         <div class="col-md-6">
-            <ul class="i-list medium">
-               <li class="i-list-item">
+   
+      <div class="grid-container">
+       
+            
+               <div class="prova">
+                
+               <div class="i-list-item">
                   <div class="icon"> 
                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                         <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                      </svg>  </div>
+                      </svg>  </div></div>
                   <div class="icon-content">
                      <h3 class="title">Scegli dove </h3>
                      <p class="sub-title">
                         Troverai le nostre sedi a Milano, Roma e Torino
                      </p>
                   </div>
-                  <div class="iconlist-timeline"></div>
-               </li>
-               <li class="i-list-item">
+            
+             </div>
+               <div class="prova">
+               <div class="i-list-item">
                   <div class="icon"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shop-window" viewBox="0 0 16 16">
                      <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zm2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5z"/>
-                   </svg> </div>
+                   </svg> </div></div>
                   <div class="icon-content">
                      <h3 class="title"> Scegli il tuo ristorante</h3>
                      <p>
-                        le nostre sedi si trovano nelle zone più esclusive della città. Consulta la sezione <a href="">"Dove siamo"</a>   
+                        le nostre sedi si trovano nelle zone più esclusive della città. <br>
+                        Consulta la sezione <a href="">"Dove siamo"</a>   
                      </p>
                   </div>
-                  <div class="iconlist-timeline"></div>
-               </li>
-               <li class="i-list-item">
+       
+               </div>
+       
+               <div class="prova">
+               <div class="i-list-item">
                   <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
                      <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
-                   </svg> </div>
+                   </svg> </div></div>
 
                   <div class="icon-content">
                      <h3 class="title">Scegli quando</h3>
@@ -137,59 +142,71 @@
                         Ci trovi aperti tutti i giorni dalle 11 alle 22
                      </p>
                   </div>
-               </li>
-            </ul>
-         </div>
-         <div class="col-md-4">
-            <ul class="i-list medium">
-               <li class="i-list-item">
+               </div>
+        
+           
+   
+
+           
+         
+            <div class="prova">
+    
+               <div class="i-list-item">
                   <div class="icon"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
                      <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                      <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
                      <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
-                   </svg> </div>
+                   </svg> </div></div>
                   <div class="icon-content">
                      <h3 class="title">Dicci con chi</h3>
                      <p class="sub-title">
                         Da noi è possibile prenotare fino ad un massimo di 20 persone per tavolo
                      </p>
                   </div>
-                  <div class="iconlist-timeline"></div>
-               </li>
-               <li class="i-list-item">
+             
+               </div>
+          
+               <div class="prova">
+               <div class="i-list-item">
                   <div class="icon"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-check" viewBox="0 0 16 16">
                      <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
-                   </svg></div>
+                   </svg></div></div>
                   <div class="icon-content">
                      <h3 class="title">Scegli cosa</h3>
                      <p>
                         I menù di sit&amp; Eat sono in continua evoluzione ma avrai sempre la possibilità di scegliere tra tre menu differenti, adatti a tutte le esigenze. Consulta la sezione <a href="TreMenu.html">"I nostri menù" </a>
                      </p>
                   </div>
-                  <div class="iconlist-timeline"></div>
-               </li>
-               <li class="i-list-item">
+              
+               </div>
+               <div class="prova">
+               <div class="i-list-item">
                   <div class="icon"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
                      <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"/>
-                     <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"/>
-                   </svg> </div>
+   
+                   </svg> </div></div>
                   <div class="icon-content">
                      <h3 class="title">Ed ora non resta che.. SIT &amp; EAT!</h3>
-
+                     <p>blablabla bla bla bla bla</p>
                   </div>
-               </li>
-            </ul>
+               </div>
+            
+       
+   
+            </div>
          </div>
+             <div class="prenota">
+         <form >
+             <button class="btnprenota"><a href="/red/start/welcome.jsp">
+            PRENOTA IL TUO TAVOLO!</a></button>
+            </form>
+   </div>
+</div>
+   </div>
+   
       
 </section>
 
-<div>
-<form action target="_blank">
- <a href="welcome.jsp">
-    <input type="submit"value="PRENOTA IL TUO TAVOLO">
- </a>
-</form>
-</div>
 
 </body>
 </html>

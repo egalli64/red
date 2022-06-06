@@ -8,6 +8,7 @@
 <title>Sit&amp;Eat welcome</title>
 </head>
 <body>
+
 	<h3>Benvenut@ in Sit &amp; Eat, ${username}!</h3>
 	<div>
 	<figure>
@@ -67,9 +68,11 @@
 <label><input type="radio" name="menu" value="vegetariano">Menù vegetariano</label>
 
             </div>
-			<a href="tremenu.html"> Rivedi i nostri menù! </a>
+			<a href="/red/TreMenu.html"> Rivedi i nostri menù! </a>
 			</div>
 			<br>
 			<button id="btn">Prenota!</button>
+			<a href="/red/start/logout"> logout! </a>
+			
 </body>
 </html>

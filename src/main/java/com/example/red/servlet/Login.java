@@ -21,12 +21,12 @@ public class Login extends HttpServlet {
 
 		String url;
 		
-		HttpSession session = request.getSession();
+		
 		if (username == null || username.isBlank() || password == null || password.isBlank()) {
-			session.setAttribute("username", username);
 			url = "/login.html";
 		} else {
-			session.setAttribute("username", null);
+			HttpSession session = request.getSession();
+			session.setAttribute("username", username);
 			url = "welcome.jsp";
 		}
 		request.setAttribute("username", username);
