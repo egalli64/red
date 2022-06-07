@@ -10,16 +10,17 @@
 <body>
     <div class="container">
 <div>
-        <h1 id="benvenuto" >Grazie, ${username}</h1>
+        <h1 id="benvenuto">Grazie, ${username}</h1>
 </div>
 <div>
     
-<h2>La tua prenotazione è andata a buon fine.</h2>
+<h2 class="riepilogo">La tua prenotazione è andata a buon fine.</h2>
 </div>
 <div>
-<h3>Ti aspettiamo a ${citta},${ristorante} il ${giorno} nella fascia oraria ${ora}.</h3>
-<h3>Hai prenotato per ${coperti} persone, il menu ${menu}.</h3>
+<h3 class="riepilogo">Ti aspettiamo a ${citta} , nella nostra sede di ${ristorante}  il ${giorno} nella fascia oraria ${ora}.</h3>
+<h3 class="riepilogo">Hai prenotato per ${coperti} persone, il menu ${menu}.</h3>
 </div>
+
 </div>
 </body>
 </html>

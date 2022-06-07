@@ -39,15 +39,15 @@
 		
 		<select class="form-control form-control-lg" placeholder=" Ristorante" name= "ristorante" required>
 		<option> Ristorante </option>
-			<option value="Milano">MILANO - Piazza Duomo </option>
-			<option value="Milano">MILANO - Porta Venezia </option>
-			<option value="Milano">MILANO - Corso Como </option>
-			<option value="Roma">ROMA - Piazza di Spagna</option>
-			<option value="Roma">ROMA - Piazza del Popolo </option>
-			<option value="Roma">ROMA - Via del Corso</option>
-			<option value="Torino">TORINO - Piazza Castello</option>
-			<option value="Torino">TORINO - Via Nizza</option>
-			<option value="Torino">TORINO - Lingotto</option>
+			<option value="Piazza Duomo">MILANO - Piazza Duomo </option>
+			<option value="Porta Venezia">MILANO - Porta Venezia </option>
+			<option value="Corso Como">MILANO - Corso Como </option>
+			<option value="Piazza di Spagna">ROMA - Piazza di Spagna</option>
+			<option value="Piazza del Popolo">ROMA - Piazza del Popolo </option>
+			<option value="Via del Corso">ROMA - Via del Corso</option>
+			<option value="Piazza Castello">TORINO - Piazza Castello</option>
+			<option value="Via Nizza">TORINO - Via Nizza</option>
+			<option value="Lingotto">TORINO - Lingotto</option>
 			</select>
 			<span> <a href="/red/sedi.html" class="rivedi"> Dove siamo </a> </span>
 				</div>

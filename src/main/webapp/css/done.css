@@ -6,11 +6,12 @@ body {
     #benvenuto {
  
         font-weight: 300;
-          margin-top: 40px;
+          margin-top: 50px;
           margin-left: 20px;
           color: rgba(198, 49, 49, 0.929);
           font-size: 50px;
           font-family: Garamond, serif;
+          text-align: center;
       }
 
       .container{
@@ -18,4 +19,12 @@ body {
               border-radius: 30px;
               margin-left: 20%;
               margin-right: 20%;
+              margin-bottom: 20%;
+      }
+
+      .riepilogo {
+        display:flex;
+            justify-content: space-around;
+            margin-left: auto;
+            margin-right: auto;
       }
