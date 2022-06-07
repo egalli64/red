@@ -1,0 +1,21 @@
+body {
+    background-color:rgba(255, 166, 0, 0.563);
+      padding:80px 0;
+    }
+
+    #benvenuto {
+ 
+        font-weight: 300;
+          margin-top: 40px;
+          margin-left: 20px;
+          color: rgba(198, 49, 49, 0.929);
+          font-size: 50px;
+          font-family: Garamond, serif;
+      }
+
+      .container{
+        background-color: #eee;
+              border-radius: 30px;
+              margin-left: 20%;
+              margin-right: 20%;
+      }
