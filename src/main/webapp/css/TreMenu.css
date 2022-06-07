@@ -10,7 +10,7 @@ body{
   display: inline-block;
   padding: 7px;
   border-radius: 40px;
-  border: 1px solid orange;
+  border: 1px solid rgba(255, 166, 0, 0.563);
   margin-bottom: 45px;
 }
 
@@ -80,7 +80,7 @@ body{
   height: 50px;
   width: 100%;
   border-radius: 0 0 10px 10px;
-  background-color: orange;
+  background-color: rgba(255, 166, 0, 0.563);
   position: absolute;
   content: '';
   left: 0;
@@ -152,7 +152,7 @@ body{
 }
 
 .popular {
-  background-color: orange;
+  background-color: rgba(255, 166, 0, 0.563);
 }
 
 .popular .price-top {
@@ -176,6 +176,19 @@ body{
   color: #fff !important;
 }
 
-myButton{
-    background-color: red !important;
+.container-flex{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 150px;
 }
+
+.button {
+  margin-top: 50px;
+  margin-left: 20px;
+  background-color: red !important;
+  font-family: Montserrat;
+  border: #f00;
+  color:black;
+}
+

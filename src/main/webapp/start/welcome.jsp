@@ -16,11 +16,11 @@
 	<figure>
 		<img src="/red/immagine/SIT.jpg" alt="SIT" width="30%">
 		</figure></div>
-	<p id="prenotaora"> COMPILA IL FORM	<p>
+	<p id="prenotaora">COMPILA IL FORM<p>
 		<br>
 		<form action="/red/reservation/new" id="form">
 		<div> 
-		<label for="città" class="form"> <b> Scegli la città: </b> </label>
+		<label for="città" class="form"> <b>Scegli la città:</b> </label>
 			
 
 			<select class="form-control form-control-lg" placeholder="Città" name= "citta" required>
