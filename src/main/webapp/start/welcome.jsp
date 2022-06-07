@@ -73,7 +73,7 @@
                 
             <div>
                 <label class="form"> <b> Scegli il tuo menù:</b> </label>
-			     <label><input type="radio" name="menu" value="italiana" checked>Menù all'italiana</label>
+			     <label><input type="radio" name="menu" value="italiano" checked>Menù italiano</label>
                     <label><input type="radio" name="menu" value="vegano">Menù vegano</label>
 					<label><input type="radio" name="menu" value="vegetariano">Menù vegetariano</label>
 						<a href="/red/TreMenu.html" class="rivedi"> Rivedi i nostri menù! </a>
