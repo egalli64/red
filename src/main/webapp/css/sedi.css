@@ -17,35 +17,6 @@ body {
     font-family: Garamond, serif;
 }
 
-.container{
-		background-color: #eee;
-		border-radius: 30px;
-		margin-left: 20%;
-		margin-right: 20%;
-		}
-
-
-#Milano{
-display:flex;
-justify-content: space-around;
-margin-left: auto;
-margin-right: auto;
-}
-
-
-#Roma{
-	display:flex;
-justify-content: space-around;
-margin-left: auto;
-margin-right: auto;
-}
-
-#Torino{
-	display:flex;
-justify-content: space-around;
-margin-left: auto;
-margin-right: auto;
-}
 
 .città{
 	font-family: Garamond, serif;
@@ -58,12 +29,11 @@ margin-right: auto;
 
 #MI {
 margin-top: -20px;
-
 }
-.frame{
-	font-family: Garamond, serif;
-	font-size: large;
-	font-weight: bold;
+
+.container {
+	background-color: #eee;
+	border-radius: 30px;	
 }
 
 #btn{
@@ -84,4 +54,33 @@ margin-top: -20px;
 	background-color: rgba(255, 174, 0, 0.878);
 	text-decoration: none;
 	cursor: pointer;
+}
+
+.grid-container{
+	display: grid;
+	gap: 10px 20px;
+	grid-template-areas: 
+	"uno"
+	"due"
+	"tre"
+}
+
+frame:nth-child(1) {
+	grid-area: uno;
+}
+frame:nth-child(2) {
+	grid-area: uno;
+}
+frame:nth-child(3) {
+	grid-area: uno;
+}
+
+@media (min-width: 1024px){
+.grid-container{
+	margin-left: 45px;
+	background-color: #eee;
+	border-radius: 30px;
+	grid-template-areas: 
+	"uno due tre";
+}
 }
