@@ -83,8 +83,8 @@
 	
 			<br>
 			<button id="btn">Prenota!</button>
-			<a href="/red/start/logout"> logout </a>
-
+			<button id="btn-logout"><a href="/red/start/logout" id="out"> Annulla </a></button>
+ 
 
 		</div> <!--chiusura container grande-->
 
