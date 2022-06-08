@@ -183,10 +183,50 @@ body{
   margin-left: 150px;
 }
 
+.col-lg-4 {
+	color:black;
+  text-decoration: none;
+}
+
+a {
+  color:black;
+  text-decoration: none;
+}
+
+.col-lg-4:hover {
+	color:black;
+  text-decoration: none;
+}
+
+a:hover {
+  color:black;
+  text-decoration: none;
+}
+
+
 .button {
+padding: 9px 25px;
+border: none;
+border-radius: 50px;
   margin-top: 50px;
   margin-left: 20px;
-  background-color: red !important;
+ background-color: orange;
+	text-decoration: none;
+	cursor: pointer;
+  font-family: Montserrat;
+  border: #f00;
+  font-style:black;
+}
+
+.button:hover {
+padding: 9px 25px;
+border: none;
+border-radius: 50px;
+  margin-top: 50px;
+  margin-left: 20px;
+	background-color: rgba(255, 174, 0, 0.878);
+	text-decoration: none;
+	cursor: pointer;
   font-family: Montserrat;
   border: #f00;
   font-style:black;
