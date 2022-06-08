@@ -38,7 +38,7 @@ public class NewReservation extends HttpServlet {
 			session.setAttribute("ristorante", ristorante);
 			url = "done.jsp";
 		}
-		request.getRequestDispatcher("done.jsp").forward(request, response);
+		request.getRequestDispatcher(url).forward(request, response);
 		
 	}
 }
